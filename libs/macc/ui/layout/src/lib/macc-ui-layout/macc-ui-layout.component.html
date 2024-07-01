@@ -1,0 +1,11 @@
+<header class="header">
+  <lib-header></lib-header>
+</header>
+<section class="sidebar">
+  <lib-sidebar (onSidebarCollapse)="onSidebarCollapse($event)"></lib-sidebar>
+</section>
+<main class="main-content">
+  <section [ngClass]="{ collapsed: sideBarCollapsed }">
+    <router-outlet></router-outlet>
+  </section>
+</main>

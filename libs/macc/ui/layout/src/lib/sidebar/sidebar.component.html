@@ -1,0 +1,32 @@
+<div class="d-flex flex-column flex-shrink-0 bg-primary h-100">
+  <a
+    href="/"
+    class="d-block p-3 link-body-emphasis text-decoration-none"
+    title="Icon-only"
+    data-bs-toggle="tooltip"
+    data-bs-placement="right"
+  >
+    <svg class="bi pe-none" width="40" height="32">
+      <use xlink:href="#bootstrap" />
+    </svg>
+    <span class="visually-hidden">Icon-only</span>
+  </a>
+  <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+    <li class="nav-item" *ngFor="let item of navigationItems">
+      <a
+        href="#"
+        class="nav-link active py-3 px-0"
+        aria-current="page"
+        title="Home"
+      >
+        <ng-icon
+          [svg]="item.icon"
+          class="d-block m-auto"
+          size="22"
+          color="#BEC8D0"
+        />
+        <span class="fs-8">{{ item.label }}</span>
+      </a>
+    </li>
+  </ul>
+</div>

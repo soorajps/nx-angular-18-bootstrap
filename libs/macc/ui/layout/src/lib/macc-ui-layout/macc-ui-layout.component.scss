@@ -1,0 +1,14 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: var(--app-sidebar-width);
+  width: calc(100vw - var(--app-sidebar-width));
+}
+
+.sidebar {
+  width: var(--app-sidebar-width);
+  height: 100vh;
+}
+
+.main-content {
+}

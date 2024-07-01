@@ -1,0 +1,25 @@
+@import './colors.scss';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+
+$custom-colors: (
+  'tertiary': #900,
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$custom-font-sizes: (
+  8: $font-size-base * 0.9,
+  9: $font-size-base * 0.8,
+  10: $font-size-base * 0.7,
+);
+$font-sizes: map-merge($font-sizes, $custom-font-sizes);
+
+@import 'bootstrap/scss/bootstrap';
+
+:root {
+  --app-sidebar-width: 100px;
+  --app-sidebar-gap-start: 0px;
+  --app-sidebar-gap-end: 0px;
+  --app-sidebar-gap-top: 0px;
+  --app-sidebar-gap-bottom: 0px;
+}

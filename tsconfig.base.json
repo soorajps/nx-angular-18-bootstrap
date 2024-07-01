@@ -14,7 +14,20 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@macc/macc/features/account": [
+        "libs/macc/features/account/src/index.ts"
+      ],
+      "@macc/macc/features/authentication": [
+        "libs/macc/features/authentication/src/index.ts"
+      ],
+      "@macc/macc/features/dashboard": [
+        "libs/macc/features/dashboard/src/index.ts"
+      ],
+      "@macc/macc/ui/components": ["libs/macc/ui/components/src/index.ts"],
+      "@macc/macc/ui/layout": ["libs/macc/ui/layout/src/index.ts"],
+      "@macc/macc/utils": ["libs/macc/utils/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
