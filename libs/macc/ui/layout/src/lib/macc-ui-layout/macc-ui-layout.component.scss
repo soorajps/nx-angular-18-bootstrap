@@ -3,12 +3,21 @@
   top: 0;
   left: var(--app-sidebar-width);
   width: calc(100vw - var(--app-sidebar-width));
+  height: var(--app-header-height);
+  overflow: hidden;
 }
 
 .sidebar {
   width: var(--app-sidebar-width);
   height: 100vh;
+  position: fixed;
 }
 
 .main-content {
+  position: relative;
+  top: var(--app-header-height);
+  left: var(--app-sidebar-width);
+  min-height: calc(100vh - var(--app-header-height));
+  width: calc(100vw - var(--app-sidebar-width));
+  padding: 1em;
 }

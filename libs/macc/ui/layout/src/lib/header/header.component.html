@@ -1,23 +1,44 @@
-<nav class="navbar navbar-expand-lg bg-light">
-  <div class="d-flex border w-100 justify-content-start">
-    <div class="d-flex border">
-      <div
-        class="border rounded-circle d-flex justify-content-center align-content-center flex-wrap brand-logo"
-      >
-        <ng-icon [svg]="iconStar" />
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="d-flex w-100 justify-content-between">
+      <div class="d-flex flex-nowrap gap-2 w-25">
+        <div
+          class="border rounded-circle d-flex justify-content-center align-content-center flex-wrap brand-logo"
+        >
+          <ng-icon [svg]="iconStar" />
+        </div>
+        <a class="navbar-brand" href="#">Dashboard</a>
       </div>
-      <a class="navbar-brand" href="#">Dashboard</a>
-    </div>
-    <div class="border">
-      <form class="d-flex">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-tertiary" type="submit">Search</button>
-      </form>
+      <div class="d-flex w-50">
+        <form class="d-flex w-100">
+          <div class="input-group">
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              All
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">All</a></li>
+              <li><a class="dropdown-item" href="#">Account</a></li>
+              <li><a class="dropdown-item" href="#">Service Order</a></li>
+              <li><a class="dropdown-item" href="#">Trouble</a></li>
+              <li><a class="dropdown-item" href="#">Sales Leads</a></li>
+            </ul>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Global Search"
+            />
+            <button class="btn btn-outline-secondary">
+              <ng-icon [svg]="mic" />
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="w-25"></div>
     </div>
   </div>
 </nav>

@@ -1,11 +1,12 @@
 <header class="header">
   <lib-header></lib-header>
 </header>
-<section class="sidebar">
-  <lib-sidebar (onSidebarCollapse)="onSidebarCollapse($event)"></lib-sidebar>
-</section>
-<main class="main-content">
-  <section [ngClass]="{ collapsed: sideBarCollapsed }">
+
+<main class="main">
+  <section class="sidebar">
+    <lib-sidebar (onSidebarCollapse)="onSidebarCollapse($event)"></lib-sidebar>
+  </section>
+  <section class="main-content bg-main border">
     <router-outlet></router-outlet>
   </section>
 </main>

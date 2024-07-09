@@ -8,6 +8,11 @@ export const appRoutes: Routes = [
       import('@macc/macc/ui/layout').then((m) => m.MaccUiLayoutComponent),
     children: [
       {
+        path: '',
+        redirectTo: 'dashboard',
+        pathMatch: 'full',
+      },
+      {
         path: 'dashboard',
         loadComponent: () =>
           import('@macc/macc/features/dashboard').then(
